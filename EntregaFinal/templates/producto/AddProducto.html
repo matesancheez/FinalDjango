@@ -1,0 +1,25 @@
+{% extends 'header.html' %}
+
+{% load static %}
+
+{% block content %}
+    <br>
+    <div class="d-flex justify-content-center text-white mt-5">
+        <h1>Crear producto Hombres</h1>
+    </div>
+    <div class="d-flex justify-content-center text-white mt-3">
+        
+        <form action="" method="post" enctype="multipart/form-data"> 
+            {% csrf_token %}
+            <table>
+                {{ form.as_table }}
+            </table>
+            <button type="submit" class="d-block mt-3 px-3 rounded-5 border border-light bg-success text-white" value="Subir">Subir</button>
+        </form>
+    </div>
+    <div class="d-flex justify-content-center mt-5">
+        <h2 class="text-success">{{mensaje}}</h2>
+    </div>
+{% endblock  %}
+
+

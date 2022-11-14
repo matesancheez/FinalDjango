@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #000000 #212529;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #212529;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 1px;
+    border: 1px solid #000000;
+  }
+
+
+.imagenesInicio{
+    width: 100%;
+    height: 85vh;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.wraper:hover img{
+    scale:calc(1.01);
+    overflow: hidden;
+}
+
+.imgCard{
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.product-title{
+    font-size: 1.2rem;
+}
+
+.product-price{
+    font-size: 1rem;
+    position: relative;
+    top: -1vh;
+}
+
+.tarjeta{
+    padding: 0vh 3vw;
+}
+
+.titulo{
+    padding: 5vh 0vw 5vh 0vw;
+}
+.borde{
+    width: 70%;
+    margin-top: 10vh;
+    margin: 0% 15% 0% 15%;
+    
+}
